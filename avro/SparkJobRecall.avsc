@@ -1,0 +1,24 @@
+{
+  "type": "record",
+  "name": "SparkJobRecall",
+  "namespace": "com.pharbers.kafka.schema",
+  "fields": [
+    {
+      "name": "header",
+      "type": {
+        "name": "Header",
+        "type": "record",
+        "fields": [
+            {
+                "name": "channel",
+                "type": "string"
+            }
+        ]
+      }
+    },
+    {
+          "name": "payload",
+          "type": "string"
+    }
+  ]
+}
